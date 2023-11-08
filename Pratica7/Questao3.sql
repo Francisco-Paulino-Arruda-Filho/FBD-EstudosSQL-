@@ -1,0 +1,1 @@
+SELECT * FROM Musica WHERE cod_musica = 10;

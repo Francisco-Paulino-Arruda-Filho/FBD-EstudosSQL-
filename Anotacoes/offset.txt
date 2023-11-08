@@ -1,0 +1,20 @@
+limit = numero de páginas
+offset = tuplas
+Escalar: Retorna um valor
+
+
+Consulta alinhada
+Conjunto: Retorna vários valores
+Se for entre escalar e conjunto tem que usar >, <, >=. <=
+
+SELECT pnome, salario
+	FROM salario > ( 
+			SELECT AVG(salario) FROM funcionario
+   		        )
+SELECT pnome, (
+		SELECT COUNT(*)
+		FROM dependente d
+		WHERE d.fcpf = f.cpf
+)	FROM funcionario f
+
+Operadores IN e NOT IN

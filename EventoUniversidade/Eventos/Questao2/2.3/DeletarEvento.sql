@@ -1,0 +1,1 @@
+DELETE FROM Evento WHERE nome = 'Evento 4';

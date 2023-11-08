@@ -1,0 +1,14 @@
+Group by, agrupa os elementos com base em atributos
+Having count, filtra grupo
+Count(*), conta tuplas com valores não nulos no atributo. Mesmo que linhas
+where, filtra essas tuplas
+junção é uma operação cara e comum, ou seja, tem custo de desempenho
+Banco de dados relacional é normalizado
+
+JOINs externos
+LEFT JOIN, retorna todas as tuplas na tabela da esquerda independente de não ter equivalente
+RIGHT JOIN, retorna todas as tuplas na tabela da direita independente de não ter equivalente
+
+SELECT cnome, COUNT(*)
+FROM Aluno a RIGHT JOIN Curso ON a.idCurso = c.id
+GROUP BY(c.nome)

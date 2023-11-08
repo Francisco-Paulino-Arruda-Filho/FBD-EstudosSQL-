@@ -1,0 +1,3 @@
+SELECT DISTINCT *
+FROM cidade
+ORDER BY nome
